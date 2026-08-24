@@ -557,14 +557,14 @@
             <div class="feat-icon" style="background:var(--warn)">
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" width="18" height="18"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             </div>
-            <h4>SMS Trust Badge</h4>
+            <h4>SMS Badge</h4>
             <p>คัดกรอง SMS อัตโนมัติ พร้อมป้ายความน่าเชื่อถือ</p>
           </div>
           <div class="feat-card" onclick="goto(&#39;tx&#39;)">
             <div class="feat-icon" style="background:var(--ok)">
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" width="18" height="18"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
             </div>
-            <h4>Transaction Guard</h4>
+            <h4>Transaction Pause</h4>
             <p>ด่านสุดท้ายก่อนโอนเงิน หยุดคิดก่อนกดยืนยัน</p>
           </div>
         </div>
@@ -604,7 +604,7 @@
         </button>
         <div>
           <h2>AntAnt</h2>
-          <div class="sub">AI Scam Analysis Copilot</div>
+          <div class="sub">Partner & AI Scam Analysis </div>
         </div>
       </div>
     </div>
@@ -689,7 +689,7 @@
             <div class="row-icon" style="background:var(--warn)">
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" width="16" height="16"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             </div>
-            <div class="row-text"><b>SMS Trust Badge</b><span>คัดกรองและติดป้าย SMS อัตโนมัติ</span></div>
+            <div class="row-text"><b>SMS Badge</b><span>คัดกรองและติดป้าย SMS อัตโนมัติ</span></div>
           </div>
           <label class="switch"><input type="checkbox" id="tg-sms" checked=""><span class="slider"></span></label>
         </div>
@@ -698,7 +698,7 @@
             <div class="row-icon" style="background:var(--ok)">
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" width="16" height="16"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
             </div>
-            <div class="row-text"><b>Transaction Guard</b><span>ตรวจสอบก่อนโอนเงินทุกครั้ง</span></div>
+            <div class="row-text"><b>Transaction Pause</b><span>ตรวจสอบก่อนโอนเงินทุกครั้ง</span></div>
           </div>
           <label class="switch"><input type="checkbox" id="tg-tx" checked=""><span class="slider"></span></label>
         </div>
@@ -749,7 +749,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M15 18l-6-6 6-6"></path></svg>
         </button>
         <div>
-          <div style="font-weight:800; font-size:17px;">SMS Trust Badge</div>
+          <div style="font-weight:800; font-size:17px;">SMS Badge</div>
           <div style="font-size:11.5px;color:var(--muted);">ใครส่ง? ปลอดภัยไหม? รู้ก่อนเชื่อ</div>
         </div>
       </div>
@@ -805,7 +805,7 @@
         </button>
         <div>
           <div style="font-weight:800; font-size:17px;">โอนเงิน</div>
-          <div style="font-size:11.5px;color:var(--muted);">Transaction Guard เฝ้าระวังให้คุณ</div>
+          <div style="font-size:11.5px;color:var(--muted);">Transaction Pause เฝ้าระวังให้คุณ</div>
         </div>
       </div>
     </div>
@@ -823,13 +823,13 @@
           <label>จำนวนเงิน (บาท)</label>
           <input id="tx-amount" type="number" placeholder="0.00" value="25000">
         </div>
-        <div class="tx-summary">Transaction Guard จะตรวจสอบบัญชีปลายทาง จำนวนเงิน และรูปแบบธุรกรรม ก่อนให้คุณยืนยันการโอน.</div>
+        <div class="tx-summary">Transaction Pause จะตรวจสอบบัญชีปลายทาง จำนวนเงิน และรูปแบบธุรกรรม ก่อนให้คุณยืนยันการโอน.</div>
         <button class="btn-primary" onclick="runTxCheck()">ตรวจสอบและโอนเงิน</button>
       </div>
 
       <div class="tx-card">
         <div style="font-weight:800;font-size:14.5px;margin-bottom:6px;">ทดลองระดับความเสี่ยง (Demo)</div>
-        <div class="tx-summary" style="margin:0 0 12px;">Press a button below to simulate Transaction Guard results for each risk level, with examples of the reasons the system may flag.</div>
+        <div class="tx-summary" style="margin:0 0 12px;">Press a button below to simulate Transaction Pause results for each risk level, with examples of the reasons the system may flag.</div>
         <div class="scn-label" style="padding:0 0 8px;">เลือกสถานการณ์จำลอง</div>
         <div class="tx-scenarios" style="padding:0;">
           <div class="scn-chip low" onclick="simulateTxScenario(&#39;low&#39;)">ต่ำ<br></div>
@@ -1308,7 +1308,7 @@ function renderTxModal(level, amount, name, account, reasons){
       <div class="amount">฿${amount.toLocaleString()} → ${escapeHtml(name||account)}</div>
       <div style="font-size:12px;font-weight:700;color:var(--muted);margin-bottom:6px;">เหตุผลที่ระบบเตือน:</div>
       <ul class="modal-reasons">${reasons.map(r=>`<li><span class="signal-dot"></span>${r}</li>`).join('')}</ul>
-      ${isCritical ? `<div class="tx-summary" style="margin:0 0 14px;background:var(--danger-bg);color:var(--danger);font-weight:700;">Transaction Guard ระงับการโอนนี้ไว้ชั่วคราวเพื่อความปลอดภัยของคุณ กรุณาตรวจสอบตัวตนผู้รับผ่านช่องทางทางการก่อนทำรายการต่อ</div>` : ``}
+      ${isCritical ? `<div class="tx-summary" style="margin:0 0 14px;background:var(--danger-bg);color:var(--danger);font-weight:700;">Transaction Pause ระงับการโอนนี้ไว้ชั่วคราวเพื่อความปลอดภัยของคุณ กรุณาตรวจสอบตัวตนผู้รับผ่านช่องทางทางการก่อนทำรายการต่อ</div>` : ``}
       <div class="modal-btns">
         <button class="btn-stop" ${isCritical?'style="flex:none;width:100%;"':''} onclick="closeTxModal(false)">หยุดและตรวจสอบ</button>
         ${isCritical ? `` : `<button class="btn-continue" id="tx-continue-btn" ${wait>0?'disabled':''} onclick="closeTxModal(true)">${wait>0?`รอ ${wait} วิ...`:'โอนต่อ'}</button>`}
@@ -1536,7 +1536,7 @@ const UI_TRANSLATIONS={
     'เครื่องมือป้องกันของคุณ':'Your Protection Tools',
     'ตรวจข้อความ ลิงก์ สกรีนช็อต และเลขบัญชีก่อนเชื่อ':'Check messages, links, screenshots and account numbers before trusting them',
     'วิเคราะห์บทสนทนาสายเรียกเข้าแบบเรียลไทม์':'Analyze incoming calls in real time',
-    'คัดกรอง SMS อัตโนมัติ พร้อมป้ายความน่าเชื่อถือ':'Automatically screen SMS with trust badges',
+    'คัดกรอง SMS อัตโนมัติ พร้อมป้ายความน่าเชื่อถือ':'Automatically screen SMS with badges',
     'ด่านสุดท้ายก่อนโอนเงิน หยุดคิดก่อนกดยืนยัน':'The final checkpoint before transferring money',
     'สวัสดีค่ะ! ส่งข้อความ ลิงก์ สกรีนช็อต หรือเลขบัญชีที่สงสัยมาให้ AntAnt ตรวจสอบได้เลย 🐜🔍':'Hi! Send AntAnt a suspicious message, link, screenshot, or account number to check. 🐜🔍',
     'วิเคราะห์สายเรียกเข้าแบบเรียลไทม์':'Analyze incoming calls in real time',
@@ -1564,14 +1564,14 @@ const UI_TRANSLATIONS={
     'บัญชี':'Account',
     'ใครส่ง? ปลอดภัยไหม? รู้ก่อนเชื่อ':'Who sent it? Is it safe? Know before you trust.',
     'โอนเงิน':'Transfer Money',
-    'Transaction Guard เฝ้าระวังให้คุณ':'Transaction Guard watches over your transfers',
+    'Transaction Pause เฝ้าระวังให้คุณ':'Transaction Pause watches over your transfers',
     'บัญชีปลายทาง / พร้อมเพย์':'Destination Account / PromptPay',
     'ชื่อบัญชีผู้รับ':'Recipient Name',
     'จำนวนเงิน (บาท)':'Amount (THB)',
-    'Transaction Guard จะตรวจสอบบัญชีปลายทาง จำนวนเงิน และรูปแบบธุรกรรม ก่อนให้คุณยืนยันการโอน':'Transaction Guard checks the destination account, amount, and transaction pattern before you confirm the transfer.',
+    'Transaction Pause จะตรวจสอบบัญชีปลายทาง จำนวนเงิน และรูปแบบธุรกรรม ก่อนให้คุณยืนยันการโอน':'Transaction Pause checks the destination account, amount, and transaction pattern before you confirm the transfer.',
     'ตรวจสอบและโอนเงิน':'Check & Transfer',
     'ทดลองระดับความเสี่ยง (Demo)':'Try Risk Levels (Demo)',
-    'กดปุ่มด้านล่างเพื่อจำลองผลตรวจสอบของ Transaction Guard ในแต่ละระดับความเสี่ยง พร้อมตัวอย่างเหตุผลจริงที่ระบบจะแจ้งเตือน':'Press a button below to simulate Transaction Guard results for each risk level, with examples of the reasons the system may flag.',
+    'กดปุ่มด้านล่างเพื่อจำลองผลตรวจสอบของ Transaction Pause ในแต่ละระดับความเสี่ยง พร้อมตัวอย่างเหตุผลจริงที่ระบบจะแจ้งเตือน':'Press a button below to simulate Transaction Pause results for each risk level, with examples of the reasons the system may flag.',
     'เลือกสถานการณ์จำลอง':'Choose a scenario',
     'ต่ำ':'Low','ปานกลาง':'Medium','สูง':'High','ร้ายแรง':'Critical',
     'แจ้งรายงานมิจฉาชีพ':'Report a Scam',
@@ -1603,7 +1603,7 @@ const UI_TRANSLATIONS={
     'Your Protection Tools':'เครื่องมือป้องกันของคุณ',
     'Check messages, links, screenshots and account numbers before trusting them':'ตรวจข้อความ ลิงก์ สกรีนช็อต และเลขบัญชีก่อนเชื่อ',
     'Analyze incoming calls in real time':'วิเคราะห์สายเรียกเข้าแบบเรียลไทม์',
-    'Automatically screen SMS with trust badges':'คัดกรอง SMS อัตโนมัติ พร้อมป้ายความน่าเชื่อถือ',
+    'Automatically screen SMS with badges':'คัดกรอง SMS อัตโนมัติ พร้อมป้ายความน่าเชื่อถือ',
     'The final checkpoint before transferring money':'ด่านสุดท้ายก่อนโอนเงิน หยุดคิดก่อนกดยืนยัน',
     'Hi! Send AntAnt a suspicious message, link, screenshot, or account number to check. 🐜🔍':'สวัสดีค่ะ! ส่งข้อความ ลิงก์ สกรีนช็อต หรือเลขบัญชีที่สงสัยมาให้ AntAnt ตรวจสอบได้เลย 🐜🔍',
     'Simulate an incoming call':'จำลองสายเรียกเข้า',
@@ -1620,10 +1620,10 @@ const UI_TRANSLATIONS={
     'Vibrate when high risk is detected':'สั่นเตือนเมื่อพบความเสี่ยงสูง',
     'Language':'ภาษา','Choose Thai or English':'เลือกภาษาไทยหรืออังกฤษ','Thai':'ไทย','Account':'บัญชี',
     'Who sent it? Is it safe? Know before you trust.':'ใครส่ง? ปลอดภัยไหม? รู้ก่อนเชื่อ',
-    'Transfer Money':'โอนเงิน','Transaction Guard watches over your transfers':'Transaction Guard เฝ้าระวังให้คุณ',
+    'Transfer Money':'โอนเงิน','Transaction Pause watches over your transfers':'Transaction Pause เฝ้าระวังให้คุณ',
     'Destination Account / PromptPay':'บัญชีปลายทาง / พร้อมเพย์','Recipient Name':'ชื่อบัญชีผู้รับ',
     'Amount (THB)':'จำนวนเงิน (บาท)',
-    'Transaction Guard checks the destination account, amount, and transaction pattern before you confirm the transfer':'Transaction Guard จะตรวจสอบบัญชีปลายทาง จำนวนเงิน และรูปแบบธุรกรรม ก่อนให้คุณยืนยันการโอน',
+    'Transaction Pause checks the destination account, amount, and transaction pattern before you confirm the transfer':'Transaction Pause จะตรวจสอบบัญชีปลายทาง จำนวนเงิน และรูปแบบธุรกรรม ก่อนให้คุณยืนยันการโอน',
     'Check & Transfer':'ตรวจสอบและโอนเงิน','Try Risk Levels (Demo)':'ทดลองระดับความเสี่ยง (Demo)',
     'Choose a scenario':'เลือกสถานการณ์จำลอง','Low':'ต่ำ','Medium':'ปานกลาง','High':'สูง','Critical':'ร้ายแรง',
     'Report a Scam':'แจ้งรายงานมิจฉาชีพ',
